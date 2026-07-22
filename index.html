@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="star-container"></div>
+
+    <div class="container">
+
+        <h1>Stopwatch</h1>
+
+        <div class="timer-wrapper">
+            <div class="timer-ring">
+                <div class="timer-circle">
+                    <div id="display">00:00:00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="lap">Lap</button>
+            <button id="reset">Reset</button>
+            <button id="stop">Stop</button>
+
+        </div>
+
+        <div class="lap-section">
+
+            <div class="lap-header">
+
+                <h2>Lap History</h2>
+
+                <span id="lapCount">0 Laps</span>
+
+            </div>
+
+            <ul id="laps"></ul>
+
+        </div>
+
+        <div class="stats">
+
+            <h2>Mission Control</h2>
+
+            <div class="stats-card">
+
+                <span>Fastest Lap</span>
+
+                <span id="fastestLap">N/A</span>
+
+            </div>
+
+            <div class="stats-card">
+
+                <span>Slowest Lap</span>
+
+                <span id="slowestLap">N/A</span>
+
+            </div>
+
+            <div class="stats-card">
+
+                <span>Total Laps</span>
+
+                <span id="totalLaps">0</span>
+
+            </div>
+
+            <div class="stats-card">
+
+                <span>Current Time</span>
+
+                <span id="currentTime">00:00:00</span>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="scroll-buttons">
+
+    <button id="scrollUp">⬆</button>
+
+    <button id="scrollDown">⬇</button>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
